@@ -1,0 +1,10 @@
+egg
+scope
+book
+flower
+earth
+water
+heart
+star
+house
+dog
