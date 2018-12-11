@@ -72,7 +72,7 @@ postcard
 potato
 rabbit
 radio
-rai
+airplane
 sandwich
 sheep
 shoe
