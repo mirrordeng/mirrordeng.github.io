@@ -252,7 +252,7 @@ function allowDrawing() {
 submit keywords to main.html
 */
 function submitkeys(){
-	window.location.href="test.html?keywords='"+a[0]+" "+a[1]+" "+a[2]+"'"";
+	window.location.href="test.html?keywords='"+a[0]+" "+a[1]+" "+a[2]+"'";
 }
 
 /*
