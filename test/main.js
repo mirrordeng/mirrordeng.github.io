@@ -252,7 +252,7 @@ function allowDrawing() {
 submit keywords to main.html
 */
 function submitkeys(){
-	window.location.href="http://localhost:8080/bookManage1/?keywords='"+a[0]+" "+a[1]+" "+a[2]+"'";
+	window.location.href="http://localhost:8080/bookManage1;
 }
 
 /*
