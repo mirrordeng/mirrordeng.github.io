@@ -13,7 +13,7 @@ var tensor;
 load the wordsdict
 */
 async function loadDict() {
-    loc = 'e0330.txt'
+    loc = 'words0824 (1).txt'
     
     await $.ajax({
         url: loc,
@@ -50,7 +50,7 @@ async function start(mode) {
     //load the wordsdict
     await loadDict()
     document.getElementById('status').innerHTML = 'dict loaded OK';
-    modelstyle = await tf.loadModel('modelstylednew/model.json')
+    modelstyle = await tf.loadModel('decoder_model_new/model.json')
     document.getElementById('status').innerHTML ='style load OK';
     
 }
