@@ -95,10 +95,10 @@ async function start(mode) {
          
         
 	var s=modelIncep.predict(data);
-	var zerok = tf.zeros([33,2048],'float32')
+	//var zerok = tf.zeros([33,2048],'float32')
 	s=s.as2D(1,2048);
 	s=s.asType('float32');
-        var e = tf.concat([s, zerok]);
+        //var e = tf.concat([s, zerok]);
 	e = e.expandDims(0);
 	    //romantic caption
 	var start_word=['start'];
@@ -119,10 +119,10 @@ async function start(mode) {
 		}
 		par_caps=tf.tensor(par_caps);
 		par_caps=par_caps.as2D(1,34);
-		var zerok = tf.zeros([33,2],'float32')
+		//var zerok = tf.zeros([33,2],'float32')
 		var s1=tf.tensor([[0,1]]);
 		s1=s1.asType('float32');
-		var midd = tf.concat([s1, zerok]);
+		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
 		var preds = modelstyle.predict([e,midd,par_caps])
 		preds=preds.flatten();
@@ -172,10 +172,10 @@ async function start(mode) {
 		}
 		par_caps=tf.tensor(par_caps);
 		par_caps=par_caps.as2D(1,34);
-		var zerok = tf.zeros([33,2],'float32')
+		//var zerok = tf.zeros([33,2],'float32')
 		var s1=tf.tensor([[1,0]]);
 		s1=s1.asType('float32');
-		var midd = tf.concat([s1, zerok]);
+		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
 		var preds = modelstyle.predict([e,midd,par_caps])
 		preds=preds.flatten();
@@ -225,10 +225,10 @@ async function start(mode) {
 		}
 		par_caps=tf.tensor(par_caps);
 		par_caps=par_caps.as2D(1,34);
-		var zerok = tf.zeros([33,2],'float32')
+		//var zerok = tf.zeros([33,2],'float32')
 		var s1=tf.tensor([[0,0]]);
 		s1=s1.asType('float32');
-		var midd = tf.concat([s1, zerok]);
+		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
 		var preds = modelstyle.predict([e,midd,par_caps])
 		preds=preds.flatten();
