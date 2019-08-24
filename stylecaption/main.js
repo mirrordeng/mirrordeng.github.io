@@ -118,7 +118,7 @@ async function start(mode) {
 			par_caps.push(0);
 		}
 		par_caps=tf.tensor(par_caps);
-		par_caps=par_caps.as2D(0,32);
+		par_caps=par_caps.as2D(1,32);
 		//var zerok = tf.zeros([33,2],'float32')
 		var s1=tf.tensor([[0,1]]);
 		s1=s1.asType('float32');
