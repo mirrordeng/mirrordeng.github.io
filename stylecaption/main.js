@@ -124,7 +124,7 @@ async function start(mode) {
 		s1=s1.asType('float32');
 		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
-		var preds = modelstyle.predict([e,midd,par_caps])
+		var preds = modelstyle.predict([e,s1,par_caps])
 		preds=preds.flatten();
 		var d=preds.argMax();
 		var s=d.toString();
@@ -177,7 +177,7 @@ async function start(mode) {
 		s1=s1.asType('float32');
 		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
-		var preds = modelstyle.predict([e,midd,par_caps])
+		var preds = modelstyle.predict([e,s1,par_caps])
 		preds=preds.flatten();
 		var d=preds.argMax();
 		var s=d.toString();
@@ -230,7 +230,7 @@ async function start(mode) {
 		s1=s1.asType('float32');
 		//var midd = tf.concat([s1, zerok]);
 		midd = midd.expandDims(0);
-		var preds = modelstyle.predict([e,midd,par_caps])
+		var preds = modelstyle.predict([e,s1,par_caps])
 		preds=preds.flatten();
 		var d=preds.argMax();
 		var s=d.toString();
